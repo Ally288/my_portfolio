@@ -5,7 +5,7 @@ function App() {
     <>
     <div className='text'>
       <h1 className='header'>Under construction</h1>
-      <p>😎 Stay tuned 😎</p>
+      <p>😎 Stay tuned! 😎</p>
     </div>
     </>
   );
