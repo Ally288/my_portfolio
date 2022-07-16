@@ -3,7 +3,10 @@ import './App.css';
 function App() {
   return (
     <>
-    <h1>Under construction</h1>
+    <div className='text'>
+      <h1 className='header'>Under construction</h1>
+      <p>😎 Stay tuned 😎</p>
+    </div>
     </>
   );
 }
