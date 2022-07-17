@@ -18,10 +18,10 @@ const App = () => {
       <Header />
       <NavBar />
         <Routes>
-            <Route exact path="/" element={<Homepage />} />
+            <Route exact path="/my_portfolio" element={<Homepage />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/about" element={<About />} />
-            <Route path="*" element={<div className="container404"><h1>404 - Page does not exist</h1></div>} />
+            <Route path="*" element={<h1>404 - Page does not exist</h1>} />
         </Routes>
       </>
     </Router>
