@@ -1,11 +1,22 @@
-import './App.css';
+import styled from 'styled-components';
+import PortfolioHomePage from './containers/PortfolioHomepage';
+
+const Title = styled.h1`
+  color: red;
+  text-align: center;
+`
+
+const Paragraph = styled.p`
+  text-align: center;
+`
 
 function App() {
   return (
     <>
-    <div className='text'>
-      <h1 className='header'>Under construction</h1>
-      <p>😎 Stay tuned! 😎</p>
+    <div>
+      <PortfolioHomePage />
+      {/* <Title>Under construction</Title>
+      <Paragraph>😎 Stay tuned! 😎</Paragraph> */}
     </div>
     </>
   );
