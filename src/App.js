@@ -1,24 +1,31 @@
 import styled from 'styled-components';
-import PortfolioHomePage from './containers/PortfolioHomepage';
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
-const Title = styled.h1`
-  color: red;
-  text-align: center;
-`
+import Homepage from './containers/Homepage';
+import Projects from "./components/Projects";
+import About from "./components/About";
+import NavBar from './components/NavBar';
+import Header from './components/Header';
 
-const Paragraph = styled.p`
-  text-align: center;
-`
+const App = () => {
 
-function App() {
+
   return (
-    <>
+
     <div>
-      <PortfolioHomePage />
-      {/* <Title>Under construction</Title>
-      <Paragraph>😎 Stay tuned! 😎</Paragraph> */}
+    <Router>
+      <>
+      <Header />
+      <NavBar />
+        <Routes>
+            <Route exact path="/" element={<Homepage />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/about" element={<About />} />
+            <Route path="*" element={<div className="container404"><h1>404 - Page does not exist</h1></div>} />
+        </Routes>
+      </>
+    </Router>
     </div>
-    </>
   );
 }
 

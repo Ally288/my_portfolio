@@ -1,14 +1,14 @@
 import React from "react";
 import styled from 'styled-components';
 
-const Portfolio = () => {
-    
 
+const HomePage = () => {
+    
     return (
         <>
-        <p>Portfolio goes here</p>
+        <p>homepage</p>
         </>
     );
 }
 
-export default Portfolio;
+export default HomePage;
