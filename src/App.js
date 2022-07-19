@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import '../src/static/css/App.css';
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 import Homepage from './containers/Homepage';
@@ -18,6 +18,7 @@ const App = () => {
       <Header />
       <NavBar />
         <Routes>
+            <Route exact path="/" element={<Homepage />} />
             <Route exact path="/my_portfolio" element={<Homepage />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/about" element={<About />} />

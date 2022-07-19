@@ -1,0 +1,14 @@
+header > h1 {
+    color: red;
+    text-align: center;
+}
+
+.header-para {
+    text-align: center;
+}
+
+.social-logos {
+    display: flex;
+    width: 50px;
+    margin: 20px;
+}

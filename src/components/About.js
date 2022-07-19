@@ -6,7 +6,7 @@ const About = () => {
 
     return (
         <>
-        <p>About goes here</p>
+        <p>Tell you about me soon</p>
         </>
     );
 }

@@ -1,6 +1,5 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import styled from 'styled-components';
 
 
 
@@ -12,7 +11,7 @@ const NavBar = () => {
 <nav>
         <Link to="/">Home</Link>
         <Link to="/projects">Projects</Link>
-        <Link to="/about">About</Link>
+        <Link to="/about">About Me</Link>
 </nav>
 </>
     );
